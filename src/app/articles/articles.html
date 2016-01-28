@@ -21,6 +21,7 @@
                   class="img-responsive">
          </a>
          <div class="actionBar text-right">
+            <span class="categoryGroup" ng-repeat="category in article.categories" ng-bind-html='category | category'></span>
             <div class="btn-group" role="group">
                <a href="#/articles/edit/{{article.id}}" class="btn btn-default" title="Edit">
                   <i class="fa fa-pencil-square-o"></i>
